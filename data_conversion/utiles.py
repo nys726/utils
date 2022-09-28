@@ -6,6 +6,7 @@ import coco_cate as co
 
 label_file_path = os.path.abspath('test/ori/a1/dog.json')
 
+
 def check_to_ext_list(path, ext):
     if os.path.exists(path):
         extension = os.path.splitext(path)[-1]
@@ -38,7 +39,7 @@ def read_image(path, pts, cate, ar):
 
 def read_json(path):
     print()
-    print('[==============:', path,':===============]\n')
+    print('[==============:', path, ':===============]\n')
     with open(path, "r") as js:
         js_dic = json.loads(js.read())
 
@@ -91,11 +92,6 @@ if __name__ == "__main__":
     b = read_json(a)
     c = single_line_json(b)
     i, j, k = detailed_json(c)
-    print(i)
-    print(j)
-    print()
-    print(k)
-#     c = single_line_json(b)
 #     d = detailed_json(c)
 #     e = detailed_name(b)
 #     coloring_by_category(d)
