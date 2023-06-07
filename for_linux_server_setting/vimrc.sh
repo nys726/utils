@@ -28,6 +28,7 @@ set laststatus=2
 set paste
 set shiftwidth=4
 set showmatch
+set cursorcolumn
 set smartcase
 set expandtab
 set smarttab
@@ -37,7 +38,7 @@ set tabstop=4
 set ruler
 set incsearch
 set statusline=\ %<%l:%v\ [%P]%=%a\ %h%m%r\ %F
-:hi CursorLine cterm=NONE ctermfg=white guibg=yellow guifg=white
+:hi CursorLine cterm=NONE ctermfg=white ctermbg=darkred guibg=darkred guifg=white
 
 autocmd BufWritePre * %s/\s\+$//e
 
