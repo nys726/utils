@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="steeltools",
-    version="0.0.2",
+    version="0.0.3",
     description="for steel Project test",
     packages=find_packages(),
     install_requires=[
