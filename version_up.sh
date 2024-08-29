@@ -45,10 +45,11 @@ done
 
 `git add setup.py ${DIR}/__init__.py`
 echo "git add"
-`git commit -m Bump Up Version: ${COMMIT_MSG}`
+`git commit -m "Bump Up Version: ${COMMIT_MSG}"`
 echo "git commit"
 `git push`
 echo "git push"
-`git tag -a v${REPLACE_VERSION} -m Bump UP Version: ${COMMIT_MSG}`
+`git tag -a v${REPLACE_VERSION} -m "Bump UP Version: ${COMMIT_MSG}"`
 echo "git tag commit"
 `git push origin v${REPLACE_VERSION}`
+echo "git push origin"
